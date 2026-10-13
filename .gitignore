@@ -1,0 +1,14 @@
+# Lista blanca: nada entra salvo lo que se habilita abajo.
+# CLAUDE.md, handoffs/ y herramientas/ son internos y nunca se publican.
+*
+!.gitignore
+!README.md
+!README.es.md
+!METHOD.md
+!DECISIONS.md
+!LICENSE
+!images/
+!images/**
+
+# Copias de lectura para Sol, generadas por _shared/scripts/md-a-html.py. Se regeneran, no van a git.
+*.lectura.html
