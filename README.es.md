@@ -14,8 +14,10 @@ Versión corta en castellano. El método completo está en inglés: [README](REA
 
 **Para quién.** Equipos de QA y e2e que ya usan Playwright y quieren sumar un agente sin entregarle el veredicto.
 
-**Estado.** Método v0.2, borrador. Todavía sin código. El harness se va a construir contra [Ghost](https://github.com/TryGhost/Ghost) y se va a demostrar sobre dos o tres pull requests reales.
+**Estado.** Método v0.2, borrador. Todavía sin código del harness: se va a construir contra [Ghost](https://github.com/TryGhost/Ghost) y se va a demostrar sobre dos o tres pull requests reales. La regla en sí ya corre en [rag-bouncer](https://github.com/missyeahhh/rag-bouncer).
 
-**Relacionado.** El [observatorio de chatbots de soporte](https://github.com/missyeahhh/chatbot-observatory): la misma idea, criterios medibles y evidencia obligatoria, aplicada a otro sistema.
+**Relacionado.** [rag-bouncer](https://github.com/missyeahhh/rag-bouncer): la misma regla en código que corre. Una barrera de evaluación en CI frena una regresión de calidad, y una guarda acepta una reparación solo si cambia cómo se encuentra un elemento, nunca lo que el test verifica, que es el límite que describe la decisión D6. Es aparte del harness y prueba un asistente de soporte, no una suite e2e.
+
+El [observatorio de chatbots de soporte](https://github.com/missyeahhh/chatbot-observatory): la misma idea, criterios medibles y evidencia obligatoria, aplicada a otro sistema.
 
 Licencia [CC BY 4.0](LICENSE).

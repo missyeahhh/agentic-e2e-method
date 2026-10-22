@@ -34,9 +34,11 @@ Full description: [METHOD.md](METHOD.md). Why these choices: [DECISIONS.md](DECI
 
 <h3><img src="images/h-status.png" alt="Status" width="800"></h3>
 
-Method v0.2, draft. No code yet. The harness comes next, built against [Ghost](https://github.com/TryGhost/Ghost) and demonstrated on two or three of its real pull requests.
+Method v0.2, draft. No harness code yet: it comes next, built against [Ghost](https://github.com/TryGhost/Ghost) and demonstrated on two or three of its real pull requests. The rule itself already runs in [rag-bouncer](https://github.com/missyeahhh/rag-bouncer).
 
-**Related work.** [Customer support chatbot observatory](https://github.com/missyeahhh/chatbot-observatory): public audits of support chatbots against three versioned rubrics. Same idea, applied to a different system: measurable criteria, a defined test, required evidence. The judgment layer here borrows its rules from there, and from the observatory's [taxonomy of failures in an agentic system](https://github.com/missyeahhh/chatbot-observatory/blob/main/metodo/taxonomia-de-fallas.md).
+**Related work.** [rag-bouncer](https://github.com/missyeahhh/rag-bouncer): the same rule in running code. An eval gate in CI blocks a quality regression, and a healing guard accepts a repair only if it changes how an element is found, never what a test asserts, which is the boundary decision D6 describes. It is separate from the harness, and it tests a support assistant, not an e2e suite.
+
+[Customer support chatbot observatory](https://github.com/missyeahhh/chatbot-observatory): public audits of support chatbots against three versioned rubrics. Same idea, applied to a different system: measurable criteria, a defined test, required evidence. The judgment layer here borrows its rules from there, and from the observatory's [taxonomy of failures in an agentic system](https://github.com/missyeahhh/chatbot-observatory/blob/main/metodo/taxonomia-de-fallas.md).
 
 <h3><img src="images/h-reach.png" alt="Reach out" width="800"></h3>
 
